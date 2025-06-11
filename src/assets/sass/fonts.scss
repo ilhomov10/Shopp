@@ -1,0 +1,13 @@
+@mixin rubik-font($weight, $file) {
+  @font-face {
+    font-family: 'Rubik';
+    src: url('#{$file}.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+@include rubik-font(700, 'Rubik-Bold');
+@include rubik-font(600, 'Rubik-SemiBold');
+@include rubik-font(500, 'Rubik-Medium');
+@include rubik-font(400, 'Rubik-Regular');

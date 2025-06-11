@@ -1,0 +1,144 @@
+.basket {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      // text-align: center;
+      color: #666;
+    }
+  
+    .basket_items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .basket_item {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 6px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
+  
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+  
+      .basket_item_img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 6px;
+        margin-right: 20px;
+        background: #f0f0f0;
+      }
+  
+      .basket_item_info {
+        flex-grow: 1;
+  
+        h3 {
+          font-size: 1.25rem;
+          margin: 0 0 8px;
+          color: #222;
+        }
+  
+        p {
+          margin: 4px 0;
+          font-size: 1rem;
+          color: #555;
+        }
+  
+        button {
+          margin-top: 10px;
+          padding: 6px 14px;
+          background-color: #ff4d4f;
+          border: none;
+          border-radius: 4px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.25s ease;
+  
+          &:hover {
+            background-color: #e04344;
+          }
+        }
+      }
+    }
+  
+    .basket_summary {
+      border-top: 1px solid #ddd;
+      padding-top: 25px;
+      text-align: center;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #222;
+      }
+  
+      button {
+        background-color: #ff4d4f;
+        color: white;
+        font-weight: 700;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #ff4d4f;
+        }
+      }
+    }
+  
+    // Responsiv uchun
+    @media (max-width: 600px) {
+      padding: 15px;
+  
+      .basket_item {
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .basket_item_img {
+          margin-bottom: 12px;
+          width: 100%;
+          height: auto;
+        }
+  
+        .basket_item_info {
+          width: 100%;
+  
+          button {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+  
+      .basket_summary {
+        button {
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    }
+  }

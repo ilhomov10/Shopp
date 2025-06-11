@@ -1,0 +1,174 @@
+.series {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  color: #5e28f1;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card__1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+  height: auto;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.ins {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 40px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #5e28f1;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 2px solid #fa8500;
+  border-radius: 5px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+//
+// 🔽 Media Queries for responsiveness
+//
+@media (max-width: 1100px) {
+  .card__1 {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .ins {
+    padding: 20px;
+  }
+
+  .ins li {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card__1 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .series {
+    padding: 10px;
+    height: auto;
+  }
+
+  .card__1 {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .ins {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .ins li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .icon {
+      margin-bottom: 8px;
+    }
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+

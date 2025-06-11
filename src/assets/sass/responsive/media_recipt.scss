@@ -1,0 +1,208 @@
+@media (max-width: 1100px) {
+    .recipt_box {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        height: 260px;
+      }
+       .discount_badge{
+          padding: 4px 8px;
+          font-size: 14px;
+        }
+  
+      .recipt_card_info {
+        .recipt_card_title {
+          font-size: 19px;
+        }
+  
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .recipt_box {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        height: 260px;
+      }
+       .discount_badge{
+          padding: 4px 8px;
+          font-size: 14px;
+        }
+  
+      .recipt_card_info {
+        .recipt_card_title {
+          font-size: 18px;
+        }
+  
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .recipt_box {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+  
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        height: 240px;
+      }
+       .discount_badge{
+          padding: 4px 6px;
+          font-size: 10px;
+        }
+  
+      .recipt_card_info {
+        padding: 4px;
+  
+        .recipt_card_title {
+          font-size: 16px;
+        }
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .recipt_box {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        height: 240px;
+      }
+       .discount_badge{
+         
+          padding: 4px;
+          font-size: 10px;
+        }
+  
+      .recipt_card_info {
+        padding: 4px;
+  
+        .recipt_card_title {
+          font-size: 18px;
+        }
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .recipt_box {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    .recipt_card {
+      border-radius: 12px;
+      box-shadow: 0 0 6px #ccc;
+  
+      .recipt_card_img_wrapper {
+        height: 220px;
+      }
+       .discount_badge{
+          padding: 4px;
+          font-size: 10px;
+        }
+  
+      .recipt_card_info {
+        padding: 4px;
+  
+        .recipt_card_title {
+          font-size: 16px;
+          -webkit-line-clamp: 2;
+        }
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 13px;
+          padding: 4px 6px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .recipt_box {
+      grid-template-columns: repeat(2,1fr);
+      gap: 4px;
+    }
+  
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        height: 220px;
+      }
+      img{
+        height: auto;
+      }
+     .discount_badge{
+      padding: 2px ;
+      font-size: 7px;
+     } 
+  
+      .recipt_card_info {
+        .recipt_card_title {
+          font-size: 14px;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .recipt_card {
+      .recipt_card_img_wrapper {
+        width: auto;
+        height: 200px;
+      }
+       .discount_badge{
+          font-size: 6px;
+        }
+  
+      .recipt_card_info {
+        .recipt_card_title {
+          font-size: 12px;
+        }
+  
+        .recipt_card_price,
+        .recipt_card_rating {
+          font-size: 10px;
+        }
+      }
+    }
+  }

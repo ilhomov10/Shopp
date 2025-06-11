@@ -1,0 +1,154 @@
+.paginate {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 0;
+  list-style: none;
+  user-select: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000; // sovuq kulrang
+
+  li {
+    &.paginate_page,
+    &.paginate_prev,
+    &.paginate_next {
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    &:hover.paginate_page,
+    &:hover.paginate_prev,
+    &:hover.paginate_next {
+      background-color: yellow; // cyan-500 (kiber ko‘k)
+      color: white;
+      border-color: yellow;
+    }
+
+    &.paginate_active {
+      background-color: yellow;
+      color: white;
+      border-color: yellow;
+      cursor: default;
+      pointer-events: none;
+      font-weight: 700;
+    }
+  }
+
+  .paginate_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .paginate {
+    font-size: 13.5px;
+
+    .paginate_link {
+      min-width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .paginate {
+    font-size: 13px;
+
+    .paginate_link {
+      min-width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .paginate {
+    font-size: 12.5px;
+
+    .paginate_link {
+      min-width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .paginate {
+    font-size: 12px;
+    gap: 8px;
+
+    .paginate_link {
+      min-width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .paginate {
+    font-size: 11.5px;
+    gap: 7px;
+
+    .paginate_link {
+      min-width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .paginate {
+    font-size: 11px;
+    gap: 6px;
+
+    .paginate_link {
+      min-width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .paginate {
+    font-size: 10.5px;
+    gap: 6px;
+    padding-bottom: 80px; // mobile_nav uchun joy ajratish
+
+    .paginate_link {
+      min-width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .paginate {
+    font-size: 10px;
+    gap: 5px;
+
+    .paginate_link {
+      min-width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .paginate {
+    font-size: 9.5px;
+    gap: 4px;
+
+    .paginate_link {
+      min-width: 22px;
+      height: 22px;
+    }
+  }
+}
+
