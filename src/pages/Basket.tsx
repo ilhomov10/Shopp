@@ -61,7 +61,7 @@ const Basket: React.FC = () => {
                     {item.quantity}
                     <button onClick={() => handleIncrement(item.id)} style={{ marginLeft: "5px" }}>+</button>
                   </p>
-                  <button onClick={() => handleRemove(item.id)} style={{ marginTop: "10px", backgroundColor: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>
+                  <button className="btn_clear" onClick={() => handleRemove(item.id)} style={{ marginTop: "10px", backgroundColor: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>
                     O‘chirish
                   </button>
                 </div>
